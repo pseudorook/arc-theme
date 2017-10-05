@@ -826,6 +826,14 @@ panel-toplevel.background {
 .menu .spinner { opacity: 1 } // Fixes sound indicator buttons
 
 //
+// Firefox
+//
+window.background {
+  > window.background > menu > separator { color: $borders_color; }
+  > widget > frame { color: $borders_color; }
+}
+
+//
 // Wingpanel Popover
 //
 //WingpanelWidgetsIndicatorPopover.popover {
