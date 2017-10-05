@@ -150,7 +150,7 @@ Arc is available under the terms of the GPL-3.0. See `COPYING` for details.
 
 ## Full Preview
 ![A full screenshot of the Arc theme](http://i.imgur.com/tD1OBQ3.png)
-<sub>Screenshot Details: Icons: [Arc](https://github.com/horst3180/arc-icon-theme) | Launcher Icons based on [White Pixel Icons](http://darkdawg.deviantart.com/art/White-Pixel-Icons-252310560) | [Wallpaper](https://pixabay.com/photo-869593/) | Font: Futura Bk bt</sub>
+<sub>Screenshot Details: Icons: [Arc](https://github.com/horst3180/arc-icon-theme) | Launcher Icons based on [White Pixel Icons](http://darkdawg.deviantart.com/art/White-Pixel-Icons-252310560) | [Wallpaper](https://pixabay.com/photo-869593/) | Font: Noto Sans</sub>
 
 [obs-repo]: http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme
 [sk-overlay]: https://c.darenet.org/scriptkitties/overlay
