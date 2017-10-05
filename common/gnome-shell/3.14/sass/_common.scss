@@ -551,7 +551,6 @@ StScrollBar {
 .popup-menu {
   min-width: 200px;
   color: $fg_color;
-  border-image: url("#{$asset_path}/menu/menu.svg") 9 9 9 9;
 
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
@@ -602,7 +601,7 @@ StScrollBar {
   }
 
   &.panel-menu {
-    -boxpointer-gap: 0px;
+    -boxpointer-gap: 4px;
     margin-bottom: 1.75em;
   }
 }
@@ -614,12 +613,12 @@ StScrollBar {
 }
 
 .popup-menu-boxpointer {
-  -arrow-border-radius: 2px !important;
-  -arrow-background-color:  rgba(0,0,0,0.0) !important;
+  -arrow-border-radius: 0 !important;
+  -arrow-background-color:  $bg_color !important;
   -arrow-border-width: 1px !important;
-  -arrow-border-color: rgba(0,0,0,0.0) !important;
-  -arrow-base: 0 !important;
-  -arrow-rise: 0 !important;
+  -arrow-border-color: $borders_color !important;
+  -arrow-base: 24px !important;
+  -arrow-rise: 11px !important;
   color: $fg_color !important;
 }
 
@@ -870,7 +869,7 @@ StScrollBar {
     -natural-hpadding: 10px !important;
     -minimum-hpadding: 6px !important;
     font-weight: bold;
-    color: $_panel_fg_color !important;
+    color: transparentize($_panel_fg_color, .2) !important;
     transition-duration: 100ms;
     border-bottom-width: 1px;
     border-color: transparent;

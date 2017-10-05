@@ -616,7 +616,6 @@ StScrollBar {
 .popup-menu {
   min-width: 15em;
   color: $fg_color;
-  border-image: url("#{$asset_path}/menu/menu.svg") 9 9 9 9;
 
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
@@ -658,7 +657,7 @@ StScrollBar {
   }
   //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
   &.panel-menu {
-    -boxpointer-gap: 0px;
+    -boxpointer-gap: 4px;
     margin-bottom: 1.75em;
   }
 }
@@ -670,12 +669,12 @@ StScrollBar {
 }
 
 .popup-menu-boxpointer {
-  -arrow-border-radius: 2px;
-  -arrow-background-color:  rgba(0,0,0,0.0);
+  -arrow-border-radius: 0;
+  -arrow-background-color: $bg_color;
   -arrow-border-width: 1px;
-  -arrow-border-color: rgba(0,0,0,0.0);
-  -arrow-base: 0;
-  -arrow-rise: 0;
+  -arrow-border-color: $borders_color;
+  -arrow-base: 24px;
+  -arrow-rise: 11px;
 }
 
 .candidate-popup-boxpointer {
@@ -931,7 +930,7 @@ StScrollBar {
     -natural-hpadding: 10px;
     -minimum-hpadding: 6px;
     font-weight: bold;
-    color: $_panel_fg_color;
+    color: transparentize($_panel_fg_color, .2);
     transition-duration: 100ms;
     border-bottom-width: 1px;
     border-color: transparent;
@@ -952,7 +951,6 @@ StScrollBar {
 
     &:active, &:overview, &:focus, &:checked {
       color: $selected_fg_color;
-      background-color: $selected_bg_color;
       box-shadow: none;
       border-bottom-width: 1px;
       border-color: black;
