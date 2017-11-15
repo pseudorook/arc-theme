@@ -273,7 +273,7 @@ StScrollBar {
 .popup-menu,
 %menu {
   color: $fg_color;
-  background-color: $bg_color;
+  border-image: url("#{$asset_path}/menu/menu.svg") 9 9 9 9;
 
   &-arrow { icon-size: 16px; }
 
