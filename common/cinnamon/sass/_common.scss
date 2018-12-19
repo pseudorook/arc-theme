@@ -1186,8 +1186,10 @@ StScrollBar {
 
   &-selected-app-description { max-width: 150px; }
 
-  &-search-box:ltr { padding-left: 30px; }
-  &-search-box-rtl { padding-right: 30px; }
+  &-search-box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 #menu-search-entry {
